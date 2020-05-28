@@ -50,27 +50,34 @@ class TableViewController: UITableViewController {
         return cell
           }else {
     }
-    
+            func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
+         let memoData = memoList[indexPath.row]
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+         cell.textLabel?.text = memoData.memoTitle
+        return cell
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    
+            func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
+        // Delete the row from the data source
+        memoList.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        let userDefalults = UserDefaults.standard
+        do {
+        let data: Data = try NSKeyedArchiver.archivedData(withRootObject: self.memoList, requiringSecureCoding: false)
+        userDefalults.set(data, forKey: "memoList")
+        userDefalults.synchronize()
+        } catch {
+        print(error)
+        }
+    }
+}
+        
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -98,6 +105,4 @@ class TableViewController: UITableViewController {
     */
     return UITableViewCell()
    }
-}
-}
 }
