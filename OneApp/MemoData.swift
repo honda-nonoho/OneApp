@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseFirestore
 
 class MemoData: NSObject, NSCoding {
     var memoTitle: String?
@@ -14,10 +16,10 @@ class MemoData: NSObject, NSCoding {
     override init() { }
 
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(memoTitle, forKey: "todoTitle")
+        aCoder.encode(memoTitle, forKey: "memoTitle")
     }
 
     required init?(coder aDecoder: NSCoder) {
-        memoTitle = aDecoder.decodeObject(forKey: "todoTitle") as? String
+        memoTitle = aDecoder.decodeObject(forKey: "memoTitle") as? String
     }
 }

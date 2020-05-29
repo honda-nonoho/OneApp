@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class TableViewController: UITableViewController {
+    @IBOutlet var MainTableViewController: UITableView!
+    var db: Firestore!
     var memoList = [MemoData] ()
     override func viewDidLoad() {
         super.viewDidLoad()
+        db = Firestore.firestore()
+       
 
      if let storedData = UserDefaults().data(forKey: "memoList") {
             do {
@@ -36,6 +42,7 @@ class TableViewController: UITableViewController {
 
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+            _ = Firestore.firestore()
             
         if indexPath.row == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
@@ -103,6 +110,7 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    return UITableViewCell()
+    
+     return UITableViewCell()
    }
 }
