@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 //クラスの継承を追加
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    //UITableView、numberOfRowsInSectionの追加(表示するcell数を決める)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //戻り値の設定(表示するcell数)
-        return 3
+        return MemoFile.count
     }
     //UITableView、cellForRowAtの追加(表示するcellの中身を決める)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,11 +24,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //戻り値の設定（表示する中身)
         return MemoCell
     }
-    override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    //追加画面で入力した内容を取得する
-    if UserDefaults.standard.object(forKey: "MemoList") != nil {
-       MemoFile = UserDefaults.standard.object(forKey: "MemoList") as! [String]
+
+
+        //最初からあるコード
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            //追加画面で入力した内容を取得する
+            if UserDefaults.standard.object(forKey: "MemoList") != nil {
+                MemoFile = UserDefaults.standard.object(forKey: "MemoList") as! [String]
+            }
+        }
+
+        //最初からあるコード
+        override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+        }
     }
-}
-}

@@ -132,6 +132,7 @@
 		E22769C0247F9B38009E5F98 /* OneApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2220E762481693C00917D6D /* ViewController.swift */,
 				E2220E742481603500917D6D /* AddController.swift */,
 				E22769C7247F9B38009E5F98 /* Main.storyboard */,
 				E22769CA247F9B3A009E5F98 /* Assets.xcassets */,
@@ -140,7 +141,6 @@
 				E22769C1247F9B38009E5F98 /* AppDelegate.swift */,
 				E22769CF247F9B3A009E5F98 /* Info.plist */,
 				E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */,
-				E2220E762481693C00917D6D /* ViewController.swift */,
 			);
 			path = OneApp;
 			sourceTree = "<group>";
