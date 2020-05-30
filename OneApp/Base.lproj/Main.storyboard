@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="YK0-iC-R8S" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="htX-RT-9yw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBE-8z-WiC">
@@ -42,26 +42,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondMemoCell" id="2Jm-Ga-tDq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SecondMemoCell" id="j5S-2P-nLT">
                                         <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Jm-Ga-tDq" id="PmI-qG-9CY">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j5S-2P-nLT" id="Pys-O2-jyn">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThirdMemoCell" id="JgP-04-3Z2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThirdMemoCell" id="bVB-Jr-fGA">
                                         <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JgP-04-3Z2" id="tDM-aH-vp1">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bVB-Jr-fGA" id="tBD-lW-R8B">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="YK0-iC-R8S" id="CY2-si-xu8"/>
-                                    <outlet property="delegate" destination="YK0-iC-R8S" id="kJH-JP-8Hs"/>
+                                    <outlet property="dataSource" destination="YK0-iC-R8S" id="hrQ-HA-mEv"/>
+                                    <outlet property="delegate" destination="YK0-iC-R8S" id="bWI-pq-T0L"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -89,11 +89,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="追加画面" id="3mx-yI-rom">
-                                        <barButtonItem key="leftBarButtonItem" title="戻る" style="done" id="uda-xj-XbV">
-                                            <connections>
-                                                <segue destination="YK0-iC-R8S" kind="show" id="4Ti-g5-Iqa"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="戻る" style="done" id="uda-xj-XbV"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
