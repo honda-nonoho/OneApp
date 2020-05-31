@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
 
 class AddMemoViewController: UIViewController {
 
@@ -15,13 +17,23 @@ class AddMemoViewController: UIViewController {
         @IBOutlet weak var SecondLabel: UILabel!
         @IBOutlet weak var ThirdLabel: UILabel!
     
+    var docRef: DocumentReference!
     
         override func viewDidLoad() {
             super.viewDidLoad()
+            docRef = Firestore.firestore().document("sampleData/inspiration")
         }
 
         @IBAction func save(_ sender: Any) {
-
+            guard let memoText = memoTextView.text, !memoText.isEmpty else { return }
+            let dataToSave: [String: Any] = ["memo": memoText]
+            docRef.setData(dataToSave) { (error) in
+              if let error = error {
+               print("エラーです: \(error.localizedDescription)")
+             } else {
+               print("保存できました")
+             }
+         }
             let inputText = memoTextView.text
             let ud = UserDefaults.standard
             if ud.array(forKey: "memoArray") != nil{
