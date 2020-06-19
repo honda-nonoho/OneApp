@@ -10,19 +10,35 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
+
 class AddMemoViewController: UIViewController {
 
         @IBOutlet weak var memoTextView: UITextView!
         @IBOutlet weak var FirstLabel: UILabel!
         @IBOutlet weak var SecondLabel: UILabel!
         @IBOutlet weak var ThirdLabel: UILabel!
+        @IBOutlet weak var saveButton: UIButton!
     
+
     var docRef: DocumentReference!
     
         override func viewDidLoad() {
             super.viewDidLoad()
+            memoTextView.layer.cornerRadius = 10
+            memoTextView.layer.masksToBounds = true
+            memoTextView.layer.borderColor = UIColor.white.cgColor
+            memoTextView.layer.borderWidth = 3.0
+            
+            saveButton.layer.cornerRadius = 10
+            saveButton.layer.masksToBounds = true
+            saveButton.layer.borderColor = UIColor.white.cgColor
+            saveButton.layer.borderWidth = 3.0
+            
+            
+            
             docRef = Firestore.firestore().document("sampleData/inspiration")
         }
+    
 
         @IBAction func save(_ sender: Any) {
             guard let memoText = memoTextView.text, !memoText.isEmpty else { return }
