@@ -43,7 +43,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="memoCell" destination="1ld-0F-TC8" id="WgN-Oy-YGQ"/>
                         <outlet property="memoTableView" destination="3dY-lW-X0v" id="dmp-Ng-cAJ"/>
                         <outlet property="view" destination="DJe-dB-oHX" id="r5c-vu-g15"/>
                         <segue destination="jl2-cJ-9XG" kind="show" identifier="toDetail" id="gUy-1m-hLL"/>
