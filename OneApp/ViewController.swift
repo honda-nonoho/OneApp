@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var memoTableView: UITableView!
+    @IBOutlet weak var memoCell: UITableViewCell!
     var memoArray = [String]()
 
     let ud = UserDefaults.standard

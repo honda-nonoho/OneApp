@@ -24,6 +24,7 @@ class AddMemoViewController: UIViewController {
     
         override func viewDidLoad() {
             super.viewDidLoad()
+            
             memoTextView.layer.cornerRadius = 10
             memoTextView.layer.masksToBounds = true
             memoTextView.layer.borderColor = UIColor.white.cgColor
@@ -35,7 +36,7 @@ class AddMemoViewController: UIViewController {
             saveButton.layer.borderWidth = 3.0
             
             
-            
+    
             docRef = Firestore.firestore().document("sampleData/inspiration")
         }
     

@@ -10,10 +10,27 @@
         <!--ホーム画面-->
         <scene sceneID="hVu-4x-zGc">
             <objects>
-                <viewController id="u5R-rt-2QW" customClass="ViewController" customModule="OneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u5R-rt-2QW" customClass="ViewController" customModule="OneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DJe-dB-oHX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3dY-lW-X0v">
+                                <rect key="frame" x="0.0" y="72" width="414" height="824"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="memoCell" id="1ld-0F-TC8" customClass="memoCell">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ld-0F-TC8" id="wNY-rz-v82">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PjS-cP-yuP"/>
                     </view>
@@ -26,6 +43,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="memoCell" destination="1ld-0F-TC8" id="WgN-Oy-YGQ"/>
+                        <outlet property="memoTableView" destination="3dY-lW-X0v" id="dmp-Ng-cAJ"/>
+                        <outlet property="view" destination="DJe-dB-oHX" id="r5c-vu-g15"/>
                         <segue destination="jl2-cJ-9XG" kind="show" identifier="toDetail" id="gUy-1m-hLL"/>
                     </connections>
                 </viewController>
@@ -66,12 +86,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="memoTextView" destination="3fC-PD-Yfi" id="Vhu-vG-ogT"/>
+                        <outlet property="memoTextView" destination="3fC-PD-Yfi" id="oeh-Kf-18S"/>
+                        <outlet property="view" destination="lP0-gy-dwD" id="Bcy-2b-0cL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3On-ri-Mca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605" y="556"/>
+            <point key="canvasLocation" x="2533" y="566"/>
         </scene>
         <!--メモ記入画面-->
         <scene sceneID="OTj-sa-bXD">
@@ -107,8 +128,8 @@
                                 <color key="textColor" red="0.83464781746031746" green="0.62745672520031082" blue="0.61644351151324139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-SI-XDn">
-                                <rect key="frame" x="133" y="383" width="149" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-SI-XDn">
+                                <rect key="frame" x="133" y="383" width="148" height="48"/>
                                 <color key="backgroundColor" red="0.66462051501774744" green="0.79747380961002512" blue="0.79754464285714288" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="保存">
@@ -142,11 +163,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="メモ記入画面" id="MCr-uq-5ag"/>
                     <connections>
-                        <outlet property="FirstLabel" destination="IfZ-Hh-fvI" id="qpR-Xf-Dh7"/>
-                        <outlet property="SecondLabel" destination="GI6-Yr-ooV" id="tO5-AR-Pg9"/>
-                        <outlet property="ThirdLabel" destination="T9f-PW-U7F" id="EYn-Ac-PjQ"/>
-                        <outlet property="memoTextView" destination="srg-sJ-Oij" id="2QJ-lG-71z"/>
-                        <outlet property="saveButton" destination="4AM-SI-XDn" id="lTx-Mm-jF1"/>
+                        <outlet property="FirstLabel" destination="IfZ-Hh-fvI" id="nZl-Q7-tLq"/>
+                        <outlet property="SecondLabel" destination="GI6-Yr-ooV" id="EG6-Di-HGC"/>
+                        <outlet property="ThirdLabel" destination="T9f-PW-U7F" id="FVi-0e-Vks"/>
+                        <outlet property="memoTextView" destination="srg-sJ-Oij" id="TXo-ME-JsR"/>
+                        <outlet property="saveButton" destination="4AM-SI-XDn" id="9Zd-Sv-Uk8"/>
+                        <outlet property="view" destination="rhp-f3-FPD" id="1S1-UB-B9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5lS-GT-Uxi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

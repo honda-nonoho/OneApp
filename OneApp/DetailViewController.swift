@@ -16,11 +16,11 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    memoTextView.text = selectedMemo
-    memoTextView.layer.masksToBounds = true
-    memoTextView.layer.borderColor = UIColor.white.cgColor
-    memoTextView.layer.borderWidth = 3.0
+        
+        memoTextView.text = selectedMemo
+        memoTextView.layer.masksToBounds = true
+        memoTextView.layer.borderColor = UIColor.white.cgColor
+        memoTextView.layer.borderWidth = 3.0
     }
 
     @IBAction func deleteMemo(_ sender: Any) {
