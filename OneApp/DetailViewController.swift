@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         memoTextView.text = selectedMemo
+        memoTextView.layer.cornerRadius = 10
         memoTextView.layer.masksToBounds = true
         memoTextView.layer.borderColor = UIColor.white.cgColor
         memoTextView.layer.borderWidth = 3.0

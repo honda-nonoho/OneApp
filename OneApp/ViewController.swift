@@ -23,7 +23,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "memoCell", for: indexPath)
         cell.textLabel?.text = memoArray[indexPath.row]
+    
         return cell
+        
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -35,6 +37,17 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+            //　ナビゲーションバーの背景色
+            self.navigationController?.navigationBar.barTintColor = .yellow
+            // ナビゲーションバーのアイテムの色　（戻る　＜　とか　読み込みゲージとか）
+            self.navigationController?.navigationBar.tintColor = .brown
+            // ナビゲーションバーのテキストを変更する
+            self.navigationController?.navigationBar.titleTextAttributes = [
+            // 文字の色
+                .foregroundColor: UIColor.brown
+            ]
+    
+
 
         memoTableView.delegate = self
         memoTableView.dataSource = self

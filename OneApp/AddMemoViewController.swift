@@ -11,6 +11,7 @@ import Firebase
 import FirebaseFirestore
 
 
+
 class AddMemoViewController: UIViewController {
 
         @IBOutlet weak var memoTextView: UITextView!
@@ -35,7 +36,10 @@ class AddMemoViewController: UIViewController {
             saveButton.layer.borderColor = UIColor.white.cgColor
             saveButton.layer.borderWidth = 3.0
             
-            
+            saveButton.layer.shadowColor = UIColor.black.cgColor //影の色
+            saveButton.layer.shadowRadius = 10
+            saveButton.layer.shadowOpacity = 0.5
+            saveButton.layer.shadowOffset = CGSize(width: 2, height: 2)
     
             docRef = Firestore.firestore().document("sampleData/inspiration")
         }

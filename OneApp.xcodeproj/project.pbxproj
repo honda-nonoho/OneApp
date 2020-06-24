@@ -20,6 +20,9 @@
 		E22769F8247FD70B009E5F98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */; };
 		E22769F9247FD70B009E5F98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */; };
 		E22769FA247FD70B009E5F98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */; };
+		E2A7B6E924A069C300FED810 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7B6E824A069C300FED810 /* TitleViewController.swift */; };
+		E2A7B6EA24A069C300FED810 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7B6E824A069C300FED810 /* TitleViewController.swift */; };
+		E2A7B6EB24A069C300FED810 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7B6E824A069C300FED810 /* TitleViewController.swift */; };
 		E2D38E6224838C7B0010EC82 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */; };
 		E2D38E6324838C7B0010EC82 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */; };
 		E2D38E6424838C7B0010EC82 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */; };
@@ -72,6 +75,7 @@
 		E22769E3247F9B3A009E5F98 /* OneAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAppUITests.swift; sourceTree = "<group>"; };
 		E22769E5247F9B3A009E5F98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2A7B6E824A069C300FED810 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		E2D38E6524838D520010EC82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2D38E6924838E9F0010EC82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				E22769F7247FD70B009E5F98 /* GoogleService-Info.plist */,
 				E2D38E6524838D520010EC82 /* ViewController.swift */,
 				E2D38E6924838E9F0010EC82 /* DetailViewController.swift */,
+				E2A7B6E824A069C300FED810 /* TitleViewController.swift */,
 			);
 			path = OneApp;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				E2D38E6A24838E9F0010EC82 /* DetailViewController.swift in Sources */,
 				E2D38E6624838D520010EC82 /* ViewController.swift in Sources */,
 				E22769C4247F9B38009E5F98 /* SceneDelegate.swift in Sources */,
+				E2A7B6E924A069C300FED810 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +449,7 @@
 				E2D38E6324838C7B0010EC82 /* AddMemoViewController.swift in Sources */,
 				E22769D9247F9B3A009E5F98 /* OneAppTests.swift in Sources */,
 				E2D38E6B24838E9F0010EC82 /* DetailViewController.swift in Sources */,
+				E2A7B6EA24A069C300FED810 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +461,7 @@
 				E2D38E6424838C7B0010EC82 /* AddMemoViewController.swift in Sources */,
 				E22769E4247F9B3A009E5F98 /* OneAppUITests.swift in Sources */,
 				E2D38E6C24838E9F0010EC82 /* DetailViewController.swift in Sources */,
+				E2A7B6EB24A069C300FED810 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
