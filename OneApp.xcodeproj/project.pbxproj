@@ -32,6 +32,9 @@
 		E2D38E6A24838E9F0010EC82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6924838E9F0010EC82 /* DetailViewController.swift */; };
 		E2D38E6B24838E9F0010EC82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6924838E9F0010EC82 /* DetailViewController.swift */; };
 		E2D38E6C24838E9F0010EC82 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D38E6924838E9F0010EC82 /* DetailViewController.swift */; };
+		E2E22CCA24A4A6F4009AC5A2 /* addshadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22CC924A4A6F4009AC5A2 /* addshadow.swift */; };
+		E2E22CCB24A4A6F4009AC5A2 /* addshadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22CC924A4A6F4009AC5A2 /* addshadow.swift */; };
+		E2E22CCC24A4A6F4009AC5A2 /* addshadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22CC924A4A6F4009AC5A2 /* addshadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,7 @@
 		E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		E2D38E6524838D520010EC82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2D38E6924838E9F0010EC82 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E2E22CC924A4A6F4009AC5A2 /* addshadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addshadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			children = (
 				E22769C7247F9B38009E5F98 /* Main.storyboard */,
 				E2D38E6124838C7B0010EC82 /* AddMemoViewController.swift */,
+				E2E22CC924A4A6F4009AC5A2 /* addshadow.swift */,
 				E22769CA247F9B3A009E5F98 /* Assets.xcassets */,
 				E22769C3247F9B38009E5F98 /* SceneDelegate.swift */,
 				E22769CC247F9B3A009E5F98 /* LaunchScreen.storyboard */,
@@ -438,6 +443,7 @@
 				E2D38E6624838D520010EC82 /* ViewController.swift in Sources */,
 				E22769C4247F9B38009E5F98 /* SceneDelegate.swift in Sources */,
 				E2A7B6E924A069C300FED810 /* TitleViewController.swift in Sources */,
+				E2E22CCA24A4A6F4009AC5A2 /* addshadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +454,7 @@
 				E2D38E6724838D520010EC82 /* ViewController.swift in Sources */,
 				E2D38E6324838C7B0010EC82 /* AddMemoViewController.swift in Sources */,
 				E22769D9247F9B3A009E5F98 /* OneAppTests.swift in Sources */,
+				E2E22CCB24A4A6F4009AC5A2 /* addshadow.swift in Sources */,
 				E2D38E6B24838E9F0010EC82 /* DetailViewController.swift in Sources */,
 				E2A7B6EA24A069C300FED810 /* TitleViewController.swift in Sources */,
 			);
@@ -460,6 +467,7 @@
 				E2D38E6824838D520010EC82 /* ViewController.swift in Sources */,
 				E2D38E6424838C7B0010EC82 /* AddMemoViewController.swift in Sources */,
 				E22769E4247F9B3A009E5F98 /* OneAppUITests.swift in Sources */,
+				E2E22CCC24A4A6F4009AC5A2 /* addshadow.swift in Sources */,
 				E2D38E6C24838E9F0010EC82 /* DetailViewController.swift in Sources */,
 				E2A7B6EB24A069C300FED810 /* TitleViewController.swift in Sources */,
 			);
