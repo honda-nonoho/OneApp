@@ -32,14 +32,18 @@ class AddMemoViewController: UIViewController {
             memoTextView.layer.borderWidth = 3.0
             
             saveButton.layer.cornerRadius = 10
-            saveButton.layer.masksToBounds = true
-            saveButton.layer.borderColor = UIColor.white.cgColor
-            saveButton.layer.borderWidth = 3.0
+            saveButton.layer.cornerRadius = 10
+
+            // 2.影の設定
+            // 影の濃さ
+            saveButton.layer.shadowOpacity = 0.7
+            // 影のぼかしの大きさ
+            saveButton.layer.shadowRadius = 3
+            // 影の色
+            saveButton.layer.shadowColor = UIColor.black.cgColor
+            // 影の方向（width=右方向、height=下方向）
+            saveButton.layer.shadowOffset = CGSize(width: 5, height: 5)
             
-            saveButton.layer.shadowColor = UIColor.black.cgColor //影の色
-            saveButton.layer.shadowRadius = 10
-            saveButton.layer.shadowOpacity = 0.5
-            saveButton.layer.shadowOffset = CGSize(width: 2, height: 2)
     
             docRef = Firestore.firestore().document("sampleData/inspiration")
         }

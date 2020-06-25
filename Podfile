@@ -9,7 +9,7 @@ target 'OneApp' do
   pod 'Firebase/Analytics'
   pod'Firebase/Core'
   pod 'Firebase/Firestore'
-  pod 'MaterialComponents/Ripple'
+ 
   
   target 'OneAppTests' do
     inherit! :search_paths
