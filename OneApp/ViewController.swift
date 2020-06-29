@@ -38,7 +38,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
             //　ナビゲーションバーの背景色
-            self.navigationController?.navigationBar.barTintColor = .yellow
+            self.navigationController?.navigationBar.barTintColor = .white
             // ナビゲーションバーのアイテムの色　（戻る　＜　とか　読み込みゲージとか）
             self.navigationController?.navigationBar.tintColor = .brown
             // ナビゲーションバーのテキストを変更する
