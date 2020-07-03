@@ -9,6 +9,9 @@
 import UIKit
 
 class TitleViewController: UIViewController {
+    
+    @IBOutlet weak var startButton: UIButton!
+    
     @IBOutlet weak var titleLabel: UILabel!
     //たて
     @IBOutlet weak var titleLabelTopConstraint: NSLayoutConstraint!
@@ -25,7 +28,16 @@ class TitleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+       startButton.layer.cornerRadius = 10
+        
+       startButton.layer.shadowOpacity = 0.7
+       // 影のぼかしの大きさ
+       startButton.layer.shadowRadius = 3
+       // 影の色
+       startButton.layer.shadowColor = UIColor.black.cgColor
+       // 影の方向（width=右方向、height=下方向）
+       startButton.layer.shadowOffset = CGSize(width: 5, height: 5)
         // Do any additional setup after loading the view.
     }
     

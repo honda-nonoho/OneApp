@@ -225,11 +225,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSF-Ph-931">
                                 <rect key="frame" x="146" y="647" width="122" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oo5-eK-cNQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="はじめる"/>
+                                <state key="normal" title="はじめる">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="u5R-rt-2QW" kind="show" id="bnM-ZT-PCd"/>
                                 </connections>
@@ -245,9 +248,15 @@
                             <constraint firstItem="veZ-jH-ZEB" firstAttribute="top" secondItem="Zvx-Pv-Uei" secondAttribute="top" constant="150" id="yaw-h2-P8A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zvx-Pv-Uei"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.54248794889999996" green="0.94093475589999997" blue="0.96848052740000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="l3D-CC-baW"/>
                     <connections>
+                        <outlet property="startButton" destination="OSF-Ph-931" id="Acu-1U-f2c"/>
                         <outlet property="titleLabel" destination="veZ-jH-ZEB" id="YUd-4o-tng"/>
                         <outlet property="titleLabelRightConstraint" destination="Atb-uG-lIH" id="TSr-5U-UVx"/>
                         <outlet property="titleLabelTopConstraint" destination="yaw-h2-P8A" id="EHq-ik-B5B"/>
