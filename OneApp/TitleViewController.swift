@@ -21,9 +21,6 @@ class TitleViewController: UIViewController {
         
         titleLabelTopConstraint.constant -= 250
         titleLabel.alpha = 0
-        
-        
-        
     }
     
     override func viewDidLoad() {

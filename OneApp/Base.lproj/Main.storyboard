@@ -59,11 +59,11 @@
             <objects>
                 <viewController id="jl2-cJ-9XG" customClass="DetailViewController" customModule="OneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lP0-gy-dwD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView contentMode="scaleToFill" text="　　　　　　　　　　　　" translatesAutoresizingMaskIntoConstraints="NO" id="3fC-PD-Yfi">
-                                <rect key="frame" x="55" y="247" width="318" height="253"/>
+                                <rect key="frame" x="55" y="335" width="318" height="219"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
@@ -114,11 +114,11 @@
             <objects>
                 <viewController id="m1S-dF-dFx" customClass="AddMemoViewController" customModule="OneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rhp-f3-FPD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="srg-sJ-Oij">
-                                <rect key="frame" x="87" y="119" width="240" height="162"/>
+                                <rect key="frame" x="87" y="207" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -140,25 +140,25 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="韓国語" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-Hh-fvI">
-                                <rect key="frame" x="17" y="119" width="62" height="20.5"/>
+                                <rect key="frame" x="17" y="207" width="62" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カナルビ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI6-Yr-ooV">
-                                <rect key="frame" x="7" y="161.5" width="82" height="20.5"/>
+                                <rect key="frame" x="7" y="249.5" width="82" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9f-PW-U7F">
-                                <rect key="frame" x="17" y="216" width="62" height="20"/>
+                                <rect key="frame" x="17" y="304" width="62" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-SI-XDn">
-                                <rect key="frame" x="133" y="329" width="148" height="48"/>
+                                <rect key="frame" x="133" y="383" width="148" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="保存">
@@ -223,10 +223,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSF-Ph-931">
+                                <rect key="frame" x="146" y="647" width="122" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oo5-eK-cNQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="はじめる"/>
+                                <connections>
+                                    <segue destination="u5R-rt-2QW" kind="show" id="bnM-ZT-PCd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Zvx-Pv-Uei" firstAttribute="trailing" secondItem="veZ-jH-ZEB" secondAttribute="trailing" constant="115" id="Atb-uG-lIH"/>
+                            <constraint firstItem="Zvx-Pv-Uei" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="veZ-jH-ZEB" secondAttribute="trailing" id="Atb-uG-lIH"/>
+                            <constraint firstItem="veZ-jH-ZEB" firstAttribute="leading" secondItem="Zvx-Pv-Uei" secondAttribute="leading" constant="49" id="Hsw-ki-zKL"/>
+                            <constraint firstItem="OSF-Ph-931" firstAttribute="top" secondItem="veZ-jH-ZEB" secondAttribute="bottom" constant="259" id="YmE-Wh-bAz"/>
+                            <constraint firstItem="OSF-Ph-931" firstAttribute="centerX" secondItem="7Lz-Gm-Jgp" secondAttribute="centerX" id="cJ3-RD-9KF"/>
+                            <constraint firstItem="Zvx-Pv-Uei" firstAttribute="bottom" secondItem="OSF-Ph-931" secondAttribute="bottom" constant="165" id="ukq-gs-Qi2"/>
                             <constraint firstItem="veZ-jH-ZEB" firstAttribute="top" secondItem="Zvx-Pv-Uei" secondAttribute="top" constant="150" id="yaw-h2-P8A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zvx-Pv-Uei"/>
