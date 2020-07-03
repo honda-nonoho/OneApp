@@ -9,22 +9,67 @@
 import UIKit
 
 class TitleViewController: UIViewController {
-
+    @IBOutlet weak var titleLabel: UILabel!
+    //たて
+    @IBOutlet weak var titleLabelTopConstraint: NSLayoutConstraint!
+    //横
+    @IBOutlet weak var titleLabelRightConstraint: NSLayoutConstraint!
+    
+    
+    override func loadView() {
+        super.loadView()
+        
+        titleLabelTopConstraint.constant -= 250
+        titleLabel.alpha = 0
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showAnimation()
+    
     }
-    */
+private func showAnimation() {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.animate(withDuration: 1.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.9, options: [], animations: {
+                self.titleLabelTopConstraint.constant += 250
+                self.titleLabel.alpha = 1
+                self.view.layoutIfNeeded()
+            }) { (_) in
+                self.dismissAnimation()
+            }
+            
+        }
+            
+        
+        }
+    
+    private func dismissAnimation() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+              UIView.animate(withDuration: 1.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.9, options: [], animations: {
+                    self.titleLabelRightConstraint.constant -= 200
+                    self.titleLabel.alpha = 0
+                    self.view.layoutIfNeeded()
+                    
+                
+                })
+                
+            }
+            
+            
+        }
+    }
+    
 
-}
+
+    
+
+
